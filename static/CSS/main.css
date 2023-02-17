@@ -31,16 +31,72 @@ body { overflow-x:hidden; }
     position: absolute;
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
+    margin-top: 1vh;
 }
 a{
     color: rgba(228,230,239,0.95);
     text-decoration: none;
-    margin: 8px;
+    margin: 3vh;
     font-family: Hachi Maru Pop;
     font-size: larger;
-
 }
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(24vh);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(42vh);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(60vh);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+
 h1{
     color: rgba(228,230,239,0.95);
 }
@@ -52,4 +108,14 @@ h1{
 body{
     margin: 0px;
     padding: 0px
+}
+
+.instagram_2{
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
