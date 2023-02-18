@@ -1,99 +1,30 @@
 body { overflow-x:hidden; }
-
-.parallax,
-.parallax__layer {
-  height: 1000px;
-}
-
-.parallax__layer {
-  position: fixed;
-  background-position: bottom center;
-  background-size: auto 1038px;
-  background-repeat: repeat-x;
-  width: 100%;
-  z-index: 10;
-}
-.maincontent {
-  position: relative;
-  width: 100%;
-  min-height: 300vh;
-  z-index: 99;
-  background-color: #210002;
-}
-#parallax-1 {
-  background-image: url(/static/img/3.jpeg);
-}
-#parallax-2 {
-  background-image: url(/static/img/4.jpeg);
-}
 .menu{
+    padding-top: 3vh;
     width: 100%;
     position: absolute;
     display: flex;
     justify-content: space-between;
-    margin-top: 1vh;
+}
+.menu a:not(:hover){
+    transition: 1s;
+    opacity: 70%;
+}
+.menu a:hover{
+    transition: 1s;
+    opacity: 100%;
+
 }
 a{
+    @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
     color: rgba(228,230,239,0.95);
     text-decoration: none;
     margin: 3vh;
-    font-family: Hachi Maru Pop;
+    font-family: 'Gloock', serif;
     font-size: larger;
-}
-.navMenu a {
-  color: #f6f4e6;
-  text-decoration: none;
-  font-size: 1.2em;
-  display: inline-block;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 a:hover {
   color: #fddb3a;
-}
-
-.navMenu .dot {
-  width: 6px;
-  height: 6px;
-  background: #fddb3a;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(40px);
-  transform: translateX(40px);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(110px);
-  transform: translateX(24vh);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(200px);
-  transform: translateX(42vh);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(285px);
-  transform: translateX(60vh);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
 }
 
 
@@ -118,4 +49,18 @@ body{
     margin-top: 20%;
     margin-left: 10vh;
     margin-right: 10vh;
+}
+.instagram_2 a{
+    opacity: 30%;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.instagram_2 a:hover{
+    transition: 1s;
+    opacity: 100%;
+}
+
+.instagram_2 a:not(:hover) {
+    transition: 1s;
+    opacity: 30%;
 }
