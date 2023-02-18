@@ -1,19 +1,28 @@
-body { overflow-x:hidden; }
+body { overflow-x:hidden;
+       background-color: rgba(8,8,8,0.95)}
 .menu{
     padding-top: 3vh;
-    width: 100%;
-    position: absolute;
+
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    padding-bottom: 3vh;
+    width: 100%;
+    height: 100%
+
 }
 .menu a:not(:hover){
     transition: 1s;
     opacity: 70%;
+
 }
 .menu a:hover{
     transition: 1s;
     opacity: 100%;
-
+}
+a:hover {
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 a{
     @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
@@ -37,8 +46,8 @@ h1{
     background-color: rgba(19,19,19,0.95);
 }
 body{
-    margin: 0px;
-    padding: 0px
+    margin: 0;
+    padding: 0
 }
 
 .instagram_2{
@@ -56,6 +65,7 @@ body{
 }
 .space{
     margin-top: 30vh;
+    display: block;
 }
 .instagram_2 a:hover{
     transition: 1s;

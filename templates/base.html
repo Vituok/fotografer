@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
     <title>{% block title %}{% endblock %}</title>
-
-</head>
+    </head>
 <body>
- <div class="menu navMenu">
+<div style="display: block">
+
+    <div class="menu">
         <div>
             <a style="margin-left: 10vh" href="/about">About Me</a>
         </div>
@@ -18,9 +19,11 @@
             <a href="/Question">Question</a>
             <a href="/people_think">Reviews</a>
             <a style=" margin-right: 10vh" href="/message">Contact</a>
-            </div>
-     </div>
-<div class="space"></div>
+        </div>
+    </div>
+</div>
+
+
 {% block body %}
 {% endblock %}
 
