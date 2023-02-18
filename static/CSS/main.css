@@ -54,7 +54,9 @@ body{
     opacity: 30%;
     font-family: 'Didact Gothic', sans-serif;
 }
-
+.space{
+    margin-top: 30vh;
+}
 .instagram_2 a:hover{
     transition: 1s;
     opacity: 100%;
